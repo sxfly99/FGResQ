@@ -43,7 +43,7 @@ pip install -r requirements.txt
 ### 2. Download Pre-trained Weights
 
 You can download the pre-trained model weights from the following link:
-[**Download Weights (Google Drive)**](https://drive.google.com/drive/folders/10MVnAoEIDZ08Rek4qkStGDY0qLiWUahJ?usp=drive_link) or [**Download Weights (Baidu Netdisk )**](https://pan.baidu.com/s/1a2IZbr_PrgZYCbUbjKLykA?pwd=9ivu)
+[**Download Weights (Google Drive)**](https://drive.google.com/drive/folders/10MVnAoEIDZ08Rek4qkStGDY0qLiWUahJ?usp=drive_link) or [**(Baidu Netdisk)**](https://pan.baidu.com/s/1a2IZbr_PrgZYCbUbjKLykA?pwd=9ivu)
 
 Place the downloaded files in the `weights` directory.
 
