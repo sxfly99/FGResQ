@@ -22,9 +22,23 @@
 <sup>*</sup>Equal contribution. <sup>#</sup>Corresponding author. 
 </div>
 
+
 <div align="center">
   <img src="FGResQ.png" width="800"/>
 </div>
+
+<div style="font-family: sans-serif; margin-bottom: 2em;">
+    <h2 style="border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; margin-bottom: 1em;">📰 News</h2>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li style="margin-bottom: 0.8em;">
+            <strong>[2025-11-08]</strong> Our paper, "FGResQ: Fine-Grained Quality Assessment for Image Restoration", has been accepted to appear at AAAI 2026!
+        </li>
+        <li style="margin-bottom: 0.8em;">
+            <strong>[2025-08-20]</strong> Code and pre-trained models for FGResQ released.
+        </li>
+    </ul>
+</div>
+
 
 ## Quick Start
 
@@ -35,8 +49,8 @@ This guide will help you get started with the FGResQ inference code.
 First, clone the repository and install the required dependencies.
 
 ```bash
-git clone https://github.com/sxfly99/FGRestore.git
-cd FGRestore
+git clone https://github.com/sxfly99/FGResQ.git
+cd FGResQ
 pip install -r requirements.txt
 ```
 
@@ -114,7 +128,7 @@ If you find this work is useful, pleaes cite our paper!
 
 ```bibtex
 
-@article{sheng2025fg,
+@article{sheng2025fgresq,
   title={Fine-grained Image Quality Assessment for Perceptual Image Restoration},
   author={Sheng, Xiangfei and Pan, Xiaofeng and Yang, Zhichao and Chen, Pengfei and Li, Leida},
   journal={arXiv preprint arXiv:2508.14475},
