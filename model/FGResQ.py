@@ -62,7 +62,7 @@ class DualBranch(nn.Module):
             self.prompt_mlp.bias.fill_(0.0)
         
         # Load pre-trained weights
-        self._load_pretrained_weights("/home/dzc/workspace/finedatatest/inference_code/weights/Degradation.pth")
+        self._load_pretrained_weights("./weights/Degradation.pth")
 
 
         for param in self.task_cls_clip.parameters():
