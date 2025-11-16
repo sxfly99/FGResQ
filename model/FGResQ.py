@@ -7,6 +7,8 @@ from transformers import CLIPVisionModel
 # import open_clip
 import torchvision.transforms as transforms
 from PIL import Image
+import cv2
+import accelerate
 
 def load_clip_model(clip_model="openai/ViT-B-16", clip_freeze=True, precision='fp16'):
     pretrained, model_tag = clip_model.split('/')
@@ -29,7 +31,7 @@ def load_clip_model(clip_model="openai/ViT-B-16", clip_freeze=True, precision='f
 
 class DualBranch(nn.Module):
 
-    def __init__(self, clip_model="openai/ViT-B-16", clip_freeze=True, precision='fp16'):
+    def __init__(self, clip_model="openai/clip-vit-base-patch16", clip_freeze=True, precision='fp16'):
         super(DualBranch, self).__init__()
         self.clip_freeze = clip_freeze
 
@@ -60,16 +62,16 @@ class DualBranch(nn.Module):
             self.prompt_mlp.bias.fill_(0.0)
         
         # Load pre-trained weights
-        self._load_pretrained_weights("weights/Degradation.pth")
+        self._load_pretrained_weights("/home/dzc/workspace/finedatatest/inference_code/weights/Degradation.pth")
 
 
         for param in self.task_cls_clip.parameters():
             param.requires_grad = False
 
         # Unfreeze the last two layers
-        # for i in range(10, 12):  # Layers 10 and 11
-        #     for param in self.task_cls_clip.vision_model.encoder.layers[i].parameters():
-        #         param.requires_grad = True
+        for i in range(10, 12):  # Layers 10 and 11
+            for param in self.task_cls_clip.vision_model.encoder.layers[i].parameters():
+                param.requires_grad = True
     def _load_pretrained_weights(self, state_dict_path):
         """
         Load pre-trained weights, including the CLIP model and classification head.
@@ -165,21 +167,26 @@ class FGResQ:
 
         # Load the model
         self.model = DualBranch(clip_model=clip_model, clip_freeze=True, precision='fp32')
-        
+        # self.model = self.accelerator.unwrap_model(self.model)
         # Load model weights
         try:
-            state_dict = torch.load(model_path, map_location=self.device)
-            # Handle different ways of saving state_dict
-            if 'model' in state_dict:
-                state_dict = state_dict['model']
-            if 'state_dict' in state_dict:
-                state_dict = state_dict['state_dict']
-            
-            # Remove 'module.' prefix if it exists
-            state_dict = {k.replace('module.', ''): v for k, v in state_dict.items()}
+            raw = torch.load(model_path, map_location=self.device)
+            # unwrap possible containers
+            if isinstance(raw, dict) and any(k in raw for k in ['model', 'state_dict']):
+                state_dict = raw.get('model', raw.get('state_dict', raw))
+            else:
+                state_dict = raw
 
-            self.model.load_state_dict(state_dict)
-            print(f"Model weights loaded successfully from {model_path}")
+            # Only strip 'module.' if present; keep other namespaces intact
+            if any(k.startswith('module.') for k in state_dict.keys()):
+                state_dict = {k.replace('module.', '', 1): v for k, v in state_dict.items()}
+
+            missing, unexpected = self.model.load_state_dict(state_dict, strict=False)
+            if missing:
+                print(f"[load_state_dict] Missing keys: {missing}")
+            if unexpected:
+                print(f"[load_state_dict] Unexpected keys: {unexpected}")
+            print(f"Model weights loaded from {model_path}")
         except Exception as e:
             print(f"Error loading model weights: {e}")
             raise
@@ -188,16 +195,26 @@ class FGResQ:
         self.model.eval()
 
         # Define image preprocessing
+        # Match training/validation pipeline: first unify to 256x256 (as in cls_model/dataset.py),
+        # then CenterCrop to input_size, followed by CLIP normalization.
         self.transform = transforms.Compose([
-            transforms.Resize((input_size, input_size)),
             transforms.ToTensor(),
-            transforms.Normalize(mean=[0.48145466, 0.4578275, 0.40821073], std=[0.26862954, 0.26130258, 0.27577711])
+            transforms.CenterCrop(input_size),
+            transforms.Normalize(
+                mean=[0.48145466, 0.4578275, 0.40821073],
+                std=[0.26862954, 0.26130258, 0.27577711]
+            )
         ])
 
     def _preprocess_image(self, image_path):
         """Load and preprocess a single image."""
         try:
-            image = Image.open(image_path).convert("RGB")
+            # Match training dataset loader: cv2 read + resize to 256x256 (INTER_LINEAR)
+            img = cv2.cvtColor(cv2.imread(image_path), cv2.COLOR_BGR2RGB)
+            if img is None:
+                raise FileNotFoundError(f"Failed to read image at {image_path}")
+            img = cv2.resize(img, (256, 256), interpolation=cv2.INTER_LINEAR)
+            image = Image.fromarray(img)
             image_tensor = self.transform(image).unsqueeze(0)
             return image_tensor.to(self.device)
         except FileNotFoundError:
@@ -236,12 +253,19 @@ class FGResQ:
         quality2 = quality2.squeeze().item()
         
         # Interpret the comparison result
-        compare_probs = torch.softmax(compare_result, dim=-1).squeeze().cpu().numpy()
+        # print(compare_result.shape)
+        compare_probs = torch.softmax(compare_result, dim=-1).squeeze(dim=0).cpu().numpy()
+        # print(compare_probs)
         prediction = np.argmax(compare_probs)
-        
-        comparison_map = {0: 'Image 1 is better', 1: 'Image 2 is better', 2: 'Images are of similar quality'}
-        
+
+        # Align with training label semantics:
+        # dataset encodes prefs: A>B -> 1, A<B -> 0, equal -> 2
+        # So class 1 => Image 1 (A) is better, class 0 => Image 2 (B) is better
+        comparison_map = {0: 'Image 2 is better', 1: 'Image 1 is better', 2: 'Images are of similar quality'}
+
         return {
             'comparison': comparison_map[prediction],
             'comparison_raw': compare_probs.tolist()}
+    
+    
         
