@@ -2,6 +2,7 @@
     <a href="https://arxiv.org/abs/2508.14475"><img src="https://img.shields.io/badge/Arxiv-preprint-red"></a>
     <a href="https://pxf0429.github.io/FGResQ/"><img src="https://img.shields.io/badge/Homepage-green"></a>
     <a href='https://github.com/sxfly99/FGRestore/stargazers'><img src='https://img.shields.io/github/stars/sxfly99/FGRestore.svg?style=social'></a>
+    <a href="https://huggingface.co/orpheus0429/FGResQ"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue"></a>
 </div>
 
 <h1 align="center">Fine-grained Image Quality Assessment for Perceptual Image Restoration</h1>
