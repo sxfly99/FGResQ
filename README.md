@@ -1,8 +1,9 @@
 <div align="center">
     <a href="https://arxiv.org/abs/2508.14475"><img src="https://img.shields.io/badge/Arxiv-preprint-red"></a>
     <a href="https://pxf0429.github.io/FGResQ/"><img src="https://img.shields.io/badge/Homepage-green"></a>
-    <a href='https://github.com/sxfly99/FGRestore/stargazers'><img src='https://img.shields.io/github/stars/sxfly99/FGRestore.svg?style=social'></a>
     <a href="https://huggingface.co/orpheus0429/FGResQ"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue"></a>
+    <a href='https://github.com/sxfly99/FGResQ/stargazers'><img src='https://img.shields.io/github/stars/sxfly99/FGResQ.svg?style=social'></a>
+    
 </div>
 
 <h1 align="center">Fine-grained Image Quality Assessment for Perceptual Image Restoration</h1>
@@ -58,7 +59,7 @@ pip install -r requirements.txt
 ### 2. Download Pre-trained Weights
 
 You can download the pre-trained model weights from the following link:
-[**Download Weights (Google Drive)**](https://drive.google.com/drive/folders/10MVnAoEIDZ08Rek4qkStGDY0qLiWUahJ?usp=drive_link) or [**(Baidu Netdisk)**](https://pan.baidu.com/s/1a2IZbr_PrgZYCbUbjKLykA?pwd=9ivu)
+[**Download Weights (Google Drive)**](https://drive.google.com/drive/folders/10MVnAoEIDZ08Rek4qkStGDY0qLiWUahJ?usp=drive_link), [**(Baidu Netdisk)**](https://pan.baidu.com/s/1a2IZbr_PrgZYCbUbjKLykA?pwd=9ivu) or [**HuggingFace**](https://huggingface.co/orpheus0429/FGResQ)
 
 Place the downloaded files in the `weights` directory.
 
