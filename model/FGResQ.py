@@ -8,7 +8,6 @@ from transformers import CLIPVisionModel
 import torchvision.transforms as transforms
 from PIL import Image
 import cv2
-import accelerate
 
 def load_clip_model(clip_model="openai/ViT-B-16", clip_freeze=True, precision='fp16'):
     pretrained, model_tag = clip_model.split('/')
