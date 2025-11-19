@@ -4,6 +4,7 @@ import torch
 import torchvision
 import torch.nn as nn
 from transformers import CLIPVisionModel
+from huggingface_hub import hf_hub_download
 # import open_clip
 import torchvision.transforms as transforms
 from PIL import Image
@@ -60,8 +61,15 @@ class DualBranch(nn.Module):
             self.prompt_mlp.weight.fill_(0.0)
             self.prompt_mlp.bias.fill_(0.0)
         
-        # Load pre-trained weights
-        self._load_pretrained_weights("./weights/Degradation.pth")
+        local_weights_path = "./weights/Degradation.pth"
+        if os.path.exists(local_weights_path):
+            model_path = local_weights_path
+        else:
+            model_path = hf_hub_download(
+                repo_id="orpheus0429/FGResQ",
+                filename="weights/Degradation.pth"
+            )
+        self._load_pretrained_weights(model_path)
 
 
         for param in self.task_cls_clip.parameters():
