@@ -93,6 +93,12 @@ from model.FGResQ import FGResQ
 # Path to the main model weights
 model_path = "weights/FGResQ.pth"
 
+# or use HuggingFace Model
+# model_path = hf_hub_download(
+#     repo_id="orpheus0429/FGResQ",
+#     filename="weights/FGResQ.pth"
+# )
+
 # Initialize the inference engine
 model = FGResQ(model_path=model_path)
 ```
