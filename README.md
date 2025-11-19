@@ -33,7 +33,7 @@
     <h2 style="border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; margin-bottom: 1em;">📰 News</h2>
     <ul style="list-style-type: none; padding-left: 0;">
         <li style="margin-bottom: 0.8em;">
-            <strong>[2025-11-19]</strong> The model is now available on the [HuggingFace Hub](https://huggingface.co/orpheus0429/FGResQ). A live demo is also available on [Hugging Face Spaces](https://huggingface.co/spaces/orpheus0429/FGResQ) for you to try it out directly in your browser.
+            <strong>[2025-11-19]</strong> The model is now available on the <a href="https://huggingface.co/orpheus0429/FGResQ">HuggingFace Hub</a>. A live demo is also available on <a href="https://huggingface.co/spaces/orpheus0429/FGResQ">Hugging Face Spaces</a> for you to try it out directly in your browser.
         </li>
         <li style="margin-bottom: 0.8em;">
             <strong>[2025-11-08]</strong> 🎉🎉🎉Our paper, "Fine-grained Image Quality Assessment for Perceptual Image Restoration", has been accepted to appear at AAAI 2026!
