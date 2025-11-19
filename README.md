@@ -94,6 +94,7 @@ from model.FGResQ import FGResQ
 model_path = "weights/FGResQ.pth"
 
 # or use HuggingFace Model
+# from huggingface_hub import hf_hub_download
 # model_path = hf_hub_download(
 #     repo_id="orpheus0429/FGResQ",
 #     filename="weights/FGResQ.pth"
