@@ -5,7 +5,7 @@ import torchvision
 import torch.nn as nn
 from transformers import CLIPVisionModel
 from huggingface_hub import hf_hub_download
-# import open_clip
+import os
 import torchvision.transforms as transforms
 from PIL import Image
 import cv2
@@ -13,8 +13,6 @@ import cv2
 def load_clip_model(clip_model="openai/ViT-B-16", clip_freeze=True, precision='fp16'):
     pretrained, model_tag = clip_model.split('/')
     pretrained = None if pretrained == 'None' else pretrained
-    # clip_model = open_clip.create_model(model_tag, precision=precision, pretrained=pretrained)
-    # clip_model = timm.create_model('timm/vit_base_patch16_clip_224.openai', pretrained=True, in_chans=3)
     clip_model = CLIPVisionModel.from_pretrained(clip_model)
     if clip_freeze:
         for param in clip_model.parameters():
@@ -202,8 +200,6 @@ class FGResQ:
         self.model.eval()
 
         # Define image preprocessing
-        # Match training/validation pipeline: first unify to 256x256 (as in cls_model/dataset.py),
-        # then CenterCrop to input_size, followed by CLIP normalization.
         self.transform = transforms.Compose([
             transforms.ToTensor(),
             transforms.CenterCrop(input_size),
