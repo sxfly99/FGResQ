@@ -77,6 +77,7 @@ class DualBranch(nn.Module):
         for i in range(10, 12):  # Layers 10 and 11
             for param in self.task_cls_clip.vision_model.encoder.layers[i].parameters():
                 param.requires_grad = True
+        self.k=0.3
     def _load_pretrained_weights(self, state_dict_path):
         """
         Load pre-trained weights, including the CLIP model and classification head.
@@ -115,7 +116,7 @@ class DualBranch(nn.Module):
             # features = torch.cat([features0, task_features], dim
             features0 = torch.cat([features0, task_embedding, features0+task_embedding], dim=1)
             quality = self.head(features0)
-            quality = nn.Sigmoid()(quality)
+            quality = nn.Sigmoid()(quality*self.k)
 
             return quality, None, None
         elif x1 is not None:
@@ -145,8 +146,8 @@ class DualBranch(nn.Module):
             # quality1 = self.head(features1)
             quality0 = self.head(features0)
             quality1 = self.head(features1)
-            quality0 = nn.Sigmoid()(quality0)
-            quality1 = nn.Sigmoid()(quality1)
+            quality0 = nn.Sigmoid()(quality0*self.k)
+            quality1 = nn.Sigmoid()(quality1*self.k)
 
             # quality = {'quality0': quality0, 'quality1': quality1}
 
