@@ -33,6 +33,9 @@
     <h2 style="border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; margin-bottom: 1em;">📰 News</h2>
     <ul style="list-style-type: none; padding-left: 0;">
         <li style="margin-bottom: 0.8em;">
+            <strong>[2025-03-31]</strong> 🎉 The FGRestore dataset is now publicly available on <a href="https://huggingface.co/datasets/orpheus0429/FGRestore">HuggingFace</a>, <a href="https://drive.google.com/drive/folders/12MgwbE84TQZgUtCD8GyAqyPQs3z60FNr?usp=sharing">Google Drive</a>, and <a href="https://pan.baidu.com/s/1RDjFznYvKAiSg-DIoO4j3Q?pwd=vey5">Baidu Netdisk</a>.
+        </li>
+        <li style="margin-bottom: 0.8em;">
             <strong>[2025-11-19]</strong> The model is now available on the <a href="https://huggingface.co/orpheus0429/FGResQ">HuggingFace Hub</a>. A live demo is also available on <a href="https://huggingface.co/spaces/orpheus0429/FGResQ">HuggingFace Spaces</a> for you to try it out directly in your browser.
         </li>
         <li style="margin-bottom: 0.8em;">
@@ -134,6 +137,14 @@ print(f"Comparison: {comparison_result['comparison']}")
 print(f"Raw output probabilities: {comparison_result['comparison_raw']}")
 # Example output: "[0.8, 0.1, 0.1]" (Probabilities for Image1 > Image2, Image2 > Image1, Image1 ≈ Image2)
 ```
+## Dataset
+The **FGRestore** dataset is now publicly available for research purposes. You can download it from the following sources:
+- [**HuggingFace**](https://huggingface.co/datasets/orpheus0429/FGRestore)
+- [**Google Drive**](https://drive.google.com/drive/folders/12MgwbE84TQZgUtCD8GyAqyPQs3z60FNr?usp=sharing)
+- [**Baidu Netdisk**](https://pan.baidu.com/s/1RDjFznYvKAiSg-DIoO4j3Q?pwd=vey5) (提取码: vey5)
+If you use the FGRestore dataset in your research, please cite our paper.
+
+
 ## Citation
 
 If you find this work is useful, pleaes cite our paper!
