@@ -151,9 +151,12 @@ If you find this work is useful, pleaes cite our paper!
 
 ```bibtex
 
-@article{sheng2025fgresq,
-  title={Fine-grained Image Quality Assessment for Perceptual Image Restoration},
+@inproceedings{sheng2026fgresq,
+  title={Fine-grained image quality assessment for perceptual image restoration},
   author={Sheng, Xiangfei and Pan, Xiaofeng and Yang, Zhichao and Chen, Pengfei and Li, Leida},
-  journal={arXiv preprint arXiv:2508.14475},
-  year={2025}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={40},
+  number={11},
+  pages={8914--8922},
+  year={2026}
 }
