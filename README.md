@@ -33,7 +33,7 @@
     <h2 style="border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; margin-bottom: 1em;">📰 News</h2>
     <ul style="list-style-type: none; padding-left: 0;">
         <li style="margin-bottom: 0.8em;">
-            <strong>[2026-05-14]</strong> 🔥🔥🔥 Our method is utilized for <a href="cited_paper/prl_method.png">guiding the image selection mechanism</a> and <a href="cited_paper/prl_table12.png">evaluating perceptual quality</a> in <a href="https://www.sciencedirect.com/science/article/pii/S0167865526001686">Post-Processing Ensemble Framework for Balancing Fidelity and Perception in Super-Resolution</a>, Kim et al. (Pattern Recognition Letters, 2026) [(<a href="https://github.com/tama0728/ESR">code</a>)].
+            <strong>[2026-05-14]</strong> 🔥🔥🔥 Our method is utilized for <a href="cited_paper/prl_method.png">guiding the image selection mechanism</a> and <a href="cited_paper/prl_table12.png">evaluating perceptual quality</a> in <a href="https://www.sciencedirect.com/science/article/pii/S0167865526001686">Post-Processing Ensemble Framework for Balancing Fidelity and Perception in Super-Resolution</a>, Kim et al. Pattern Recognition Letters, 2026. [<a href="https://github.com/tama0728/ESR">code</a>].
         </li>
         <li style="margin-bottom: 0.8em;">
             <strong>[2026-03-31]</strong> 🎉 The FGRestore dataset is now publicly available on <a href="https://huggingface.co/datasets/orpheus0429/FGRestore">HuggingFace</a>, <a href="https://drive.google.com/drive/folders/12MgwbE84TQZgUtCD8GyAqyPQs3z60FNr?usp=sharing">Google Drive</a>, and <a href="https://pan.baidu.com/s/1RDjFznYvKAiSg-DIoO4j3Q?pwd=vey5">Baidu Netdisk</a>.
