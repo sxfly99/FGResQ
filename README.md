@@ -26,7 +26,7 @@
 
 
 <div align="center">
-  <img src="FGResQ.png" width="800"/>
+  <img src="FGRestore&FGResQ.png" width="800"/>
 </div>
 
 <div style="font-family: sans-serif; margin-bottom: 2em;">
@@ -49,7 +49,9 @@
 
 
 ## Quick Start
-
+<div align="center">
+  <img src="FGResQ.png" width="800"/>
+</div>
 This guide will help you get started with the FGResQ inference code.
 
 ### 1. Installation
