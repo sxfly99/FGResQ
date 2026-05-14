@@ -49,9 +49,7 @@
 
 
 ## Quick Start
-<div align="center">
-  <img src="FGResQ.png" width="800"/>
-</div>
+
 This guide will help you get started with the FGResQ inference code.
 
 ### 1. Installation
@@ -90,7 +88,9 @@ FGRestore/
 ## Usage
 
 The `FGResQ` provides two main functionalities: scoring a single image and comparing a pair of images.
-
+<div align="center">
+  <img src="FGResQ.png" width="800"/>
+</div>
 ### Initialize the Scorer
 
 First, import and initialize the `FGResQ`.
