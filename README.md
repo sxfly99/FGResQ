@@ -94,6 +94,7 @@ The `FGResQ` provides two main functionalities: scoring a single image and compa
 <div align="center">
   <img src="FGResQ.png" width="800"/>
 </div>
+
 ### Initialize the Scorer
 
 First, import and initialize the `FGResQ`.
