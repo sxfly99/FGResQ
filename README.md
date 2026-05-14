@@ -33,7 +33,7 @@
     <h2 style="border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; margin-bottom: 1em;">📰 News</h2>
     <ul style="list-style-type: none; padding-left: 0;">
         <li style="margin-bottom: 0.8em;">
-            <strong>[2026-05-14]</strong> 🔥 Our method is cited and evaluated in <a href="https://www.sciencedirect.com/science/article/pii/S0167865526001686">Post-Processing Ensemble Framework for Balancing Fidelity and Perception in Super-Resolution</a>, Kim et al. (Pattern Recognition Letters, 2026). The authors highlight that: "Both cases demonstrate a reliable selection mechanism guided by FGResQ."
+            <strong>[2026-05-14]</strong> 🔥 Our method is cited and utilized for evaluation in <a href="https://www.sciencedirect.com/science/article/pii/S0167865526001686">Post-Processing Ensemble Framework for Balancing Fidelity and Perception in Super-Resolution</a>, Kim et al. (Pattern Recognition Letters, 2026). The authors highlight that: "Both cases demonstrate a reliable selection mechanism guided by FGResQ."
         </li>
         <li style="margin-bottom: 0.8em;">
             <strong>[2025-03-31]</strong> 🎉 The FGRestore dataset is now publicly available on <a href="https://huggingface.co/datasets/orpheus0429/FGRestore">HuggingFace</a>, <a href="https://drive.google.com/drive/folders/12MgwbE84TQZgUtCD8GyAqyPQs3z60FNr?usp=sharing">Google Drive</a>, and <a href="https://pan.baidu.com/s/1RDjFznYvKAiSg-DIoO4j3Q?pwd=vey5">Baidu Netdisk</a>.
@@ -68,7 +68,7 @@ pip install -r requirements.txt
 ### 2. Download Pre-trained Weights
 
 You can download the pre-trained model weights from the following link:
-[**Download Weights (Google Drive)**](https://drive.google.com/drive/folders/10MVnAoEIDZ08Rek4qkStGDY0qLiWUahJ?usp=drive_link), [**(Baidu Netdisk)**](https://pan.baidu.com/s/1a2IZbr_PrgZYCbUbjKLykA?pwd=4t49)
+[**Download Weights (Google Drive)**](https://drive.google.com/drive/folders/10MVnAoEIDZ08Rek4qkStGDY0qLiWUahJ?usp=drive_link), [**(Baidu Netdisk)**](https://pan.baidu.com/s/1a2IZbr_PrgZYCbUbjKLykA?pwd=4t7i) (提取码: 4t7i)
 
 Place the downloaded files in the `weights` directory.
 
