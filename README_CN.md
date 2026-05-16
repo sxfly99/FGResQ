@@ -89,7 +89,8 @@ pip install -r requirements.txt
 ### 2. 下载预训练权重
 
 您可以通过以下链接下载预训练模型权重：
-[**下载权重 (Google Drive)**](https://drive.google.com/drive/folders/10MVnAoEIDZ08Rek4qkStGDY0qLiWUahJ?usp=drive_link), [**(百度网盘)**](https://pan.baidu.com/s/1a2IZbr_PrgZYCbUbjKLykA?pwd=4t7i) (提取码: 4t7i)
+[**下载权重 (Google Drive)**](https://drive.google.com/drive/folders/10MVnAoEIDZ08Rek4qkStGDY0qLiWUahJ?usp=drive_link), [**(百度网盘)**](https://pan.baidu.com/s/1Qotikokfiv2mWcvE-6jDIA?pwd=32nq
+) (提取码: 32nq)
 
 将下载的文件放入 `weights` 目录。
 
