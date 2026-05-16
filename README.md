@@ -10,6 +10,10 @@
 <h1 align="center">Fine-grained Image Quality Assessment for Perceptual Image Restoration</h1>
 
 <div align="center">
+    国内的小伙伴请查看详细的<a href="README_CN.md">【中文说明】</a>～
+</div>
+
+<div align="center">
     <a href="https://github.com/sxfly99">Xiangfei Sheng</a><sup>1*</sup>,
     <a href="https://github.com/pxf0429">Xiaofeng Pan</a><sup>1*</sup>,
     <a href="https://github.com/yzc-ippl">Zhichao Yang</a><sup>1</sup>,
