@@ -31,7 +31,7 @@
 
 
 <div align="center">
-  <img src="FGRestore&FGResQ.png" width="800"/>
+  <img src="Assets/FGRestore&FGResQ.png" width="800"/>
 </div>
 
 <div style="font-family: sans-serif; margin-bottom: 2em;">
@@ -97,7 +97,7 @@ FGRestore/
 
 The `FGResQ` provides two main functionalities: scoring a single image and comparing a pair of images.
 <div align="center">
-  <img src="FGResQ.png" width="800"/>
+  <img src="Assets/FGResQ.png" width="800"/>
 </div>
 
 ### Initialize the Scorer
