@@ -1,5 +1,5 @@
 <div align="center">
-    <a href="README_CN"><img src="https://img.shields.io/badge/Homepage-blue"></a>
+    <a href="README_CN"><img src="https://img.shields.io/badge/中文说明-blue"></a>
     <a href="https://arxiv.org/abs/2508.14475"><img src="https://img.shields.io/badge/Arxiv-preprint-red"></a>
     <a href="https://sxfly99.github.io/FGResQ-Home/"><img src="https://img.shields.io/badge/Homepage-green"></a>
     <a href="https://huggingface.co/spaces/orpheus0429/FGResQ"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue"></a>
