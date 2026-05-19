@@ -47,7 +47,7 @@
             <strong>[2026-03-31]</strong> 🎉🎉🎉 The FGRestore dataset is now publicly available on <a href="https://huggingface.co/datasets/orpheus0429/FGRestore">HuggingFace</a>, <a href="[...]
         </li>
         <li style="margin-bottom: 0.8em;">
-            <strong>[2025-11-19]</strong> The model is now available on the <a href="https://huggingface.co/orpheus0429/FGResQ">HuggingFace Hub</a>. A live demo is also available on <a href="https[...]
+            <strong>[2025-11-19]</strong> The model is now available on the <a href="https://huggingface.co/orpheus0429/FGResQ">HuggingFace Hub</a>. A live demo is also available on <a href="https://huggingface.co/spaces/orpheus0429/FGResQ"> HuggingFace  Space</a>
         </li>
         <li style="margin-bottom: 0.8em;">
             <strong>[2025-11-08]</strong> 🎉🎉🎉Our paper, "Fine-grained Image Quality Assessment for Perceptual Image Restoration", has been accepted to appear at AAAI 2026!
