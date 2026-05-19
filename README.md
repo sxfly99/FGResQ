@@ -36,18 +36,21 @@
 
 <div style="font-family: sans-serif; margin-bottom: 2em;">
     <h2 style="border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; margin-bottom: 1em;">📰 News</h2>
-    <ul style="list-style-type: none; padding-left: 0;">
-        <li style="margin-bottom: 0.8em;">
+    <li style="margin-bottom: 0.8em;">
             <strong>[2026-05-19]</strong> 🎉🎉🎉 FGResQ's inference implementation is now officially supported within the outstanding <a href="https://github.com/chaofengc/IQA-PyTorch">[PyIQA]</a>  framework. You can check out the detailed usage guide <a href=https://github.com/chaofengc/IQA-PyTorch/blob/main/pyiqa/archs/fgresq_arch.py">[here]</a>.
         </li>
+    <ul style="list-style-type: none; padding-left: 0;">
         <li style="margin-bottom: 0.8em;">
-            <strong>[2026-05-14]</strong> 🔥🔥🔥Our method acts as <a href="cited_paper/prl_method.png">the key perceptual model to balance fidelity and perception</a>, and is used for <a hr[...]
+            <strong>[2026-05-19]</strong> 🎉🎉🎉 The **inference** code of FGResQ is intergrated into the excellent [PyIQA](https://github.com/chaofengc/IQA-PyTorch) codeframe. Please find the detailed usage [here](https://github.com/chaofengc/IQA-PyTorch/blob/main/pyiqa/archs/fgresq_arch.py).
         </li>
         <li style="margin-bottom: 0.8em;">
-            <strong>[2026-03-31]</strong> 🎉🎉🎉 The FGRestore dataset is now publicly available on <a href="https://huggingface.co/datasets/orpheus0429/FGRestore">HuggingFace</a>, <a href="[...]
+            <strong>[2026-05-14]</strong> 🔥🔥🔥Our method acts as <a href="cited_paper/prl_method.png">the key perceptual model to balance fidelity and perception</a>, and is used for <a href="cited_paper/prl_table12.png">evaluating perceptual quality</a> in <a href="https://www.sciencedirect.com/science/article/pii/S0167865526001686">Post-Processing Ensemble Framework for Balancing Fidelity and Perception in Super-Resolution</a>, Kim et al. Pattern Recognition Letters, 2026.[<a href="https://github.com/tama0728/ESR">code</a>].
         </li>
         <li style="margin-bottom: 0.8em;">
-            <strong>[2025-11-19]</strong> The model is now available on the <a href="https://huggingface.co/orpheus0429/FGResQ">HuggingFace Hub</a>. A live demo is also available on <a href="https://huggingface.co/spaces/orpheus0429/FGResQ"> HuggingFace  Space</a>
+            <strong>[2026-03-31]</strong> 🎉🎉🎉 The FGRestore dataset is now publicly available on <a href="https://huggingface.co/datasets/orpheus0429/FGRestore">HuggingFace</a>, <a href="https://drive.google.com/drive/folders/12MgwbE84TQZgUtCD8GyAqyPQs3z60FNr?usp=sharing">Google Drive</a>, and <a href="https://pan.baidu.com/s/1RDjFznYvKAiSg-DIoO4j3Q?pwd=vey5">Baidu Netdisk</a>.
+        </li>
+        <li style="margin-bottom: 0.8em;">
+            <strong>[2025-11-19]</strong> The model is now available on the <a href="https://huggingface.co/orpheus0429/FGResQ">HuggingFace Hub</a>. A live demo is also available on <a href="https://huggingface.co/spaces/orpheus0429/FGResQ">HuggingFace Spaces</a>.
         </li>
         <li style="margin-bottom: 0.8em;">
             <strong>[2025-11-08]</strong> 🎉🎉🎉Our paper, "Fine-grained Image Quality Assessment for Perceptual Image Restoration", has been accepted to appear at AAAI 2026!
@@ -76,7 +79,7 @@ pip install -r requirements.txt
 ### 2. Download Pre-trained Weights
 
 You can download the pre-trained model weights from the following link:
-[**Download Weights (Google Drive)**](https://drive.google.com/drive/folders/10MVnAoEIDZ08Rek4qkStGDY0qLiWUahJ?usp=drive_link), [**(Baidu Netdisk)**](https://pan.baidu.com/s/1Qotikokfiv2mWcvE-6jDI[...]
+[**Download Weights (Google Drive)**](https://drive.google.com/drive/folders/10MVnAoEIDZ08Rek4qkStGDY0qLiWUahJ?usp=drive_link), [**(Baidu Netdisk)**](https://pan.baidu.com/s/1Qotikokfiv2mWcvE-6jDIA?pwd=32nq
 ) (提取码: 32nq)
 
 Place the downloaded files in the `weights` directory.
