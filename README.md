@@ -38,7 +38,7 @@
     <h2 style="border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; margin-bottom: 1em;">📰 News</h2>
     <ul style="list-style-type: none; padding-left: 0;">
         <li style="margin-bottom: 0.8em;">
-            <strong>[2026-05-19]</strong> 🎉🎉🎉 FGResQ's **inference** implementation is now officially supported within the outstanding [PyIQA](https://github.com/chaofengc/IQA-PyTorch) framework. You can check out the detailed usage guide [here](https://github.com/chaofengc/IQA-PyTorch/blob/main/pyiqa/archs/fgresq_arch.py).
+            <strong>[2026-05-19]</strong> 🎉🎉🎉 FGResQ's **inference** implementation is now officially supported within the outstanding <a href="https://github.com/chaofengc/IQA-PyTorch">[PyIQA]</a>  framework. You can check out the detailed usage guide <a href=https://github.com/chaofengc/IQA-PyTorch/blob/main/pyiqa/archs/fgresq_arch.py">[here]<\a>.
         </li>
         <li style="margin-bottom: 0.8em;">
             <strong>[2026-05-14]</strong> 🔥🔥🔥Our method acts as <a href="cited_paper/prl_method.png">the key perceptual model to balance fidelity and perception</a>, and is used for <a hr[...]
