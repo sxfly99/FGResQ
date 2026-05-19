@@ -36,12 +36,9 @@
 
 <div style="font-family: sans-serif; margin-bottom: 2em;">
     <h2 style="border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; margin-bottom: 1em;">📰 News</h2>
-    <li style="margin-bottom: 0.8em;">
-            <strong>[2026-05-19]</strong> 🎉🎉🎉 FGResQ's inference implementation is now officially supported within the outstanding <a href="https://github.com/chaofengc/IQA-PyTorch">[PyIQA]</a>  framework. You can check out the detailed usage guide <a href=https://github.com/chaofengc/IQA-PyTorch/blob/main/pyiqa/archs/fgresq_arch.py">[here]</a>.
-        </li>
     <ul style="list-style-type: none; padding-left: 0;">
         <li style="margin-bottom: 0.8em;">
-            <strong>[2026-05-19]</strong> 🎉🎉🎉 The **inference** code of FGResQ is intergrated into the excellent [PyIQA](https://github.com/chaofengc/IQA-PyTorch) codeframe. Please find the detailed usage [here](https://github.com/chaofengc/IQA-PyTorch/blob/main/pyiqa/archs/fgresq_arch.py).
+            <strong>[2026-05-19]</strong> 🎉🎉🎉 FGResQ's inference implementation is now officially supported within the outstanding <a href="https://github.com/chaofengc/IQA-PyTorch">[PyIQA]</a>  framework. You can check out the detailed usage guide <a href=https://github.com/chaofengc/IQA-PyTorch/blob/main/pyiqa/archs/fgresq_arch.py">[here]</a>.
         </li>
         <li style="margin-bottom: 0.8em;">
             <strong>[2026-05-14]</strong> 🔥🔥🔥Our method acts as <a href="cited_paper/prl_method.png">the key perceptual model to balance fidelity and perception</a>, and is used for <a href="cited_paper/prl_table12.png">evaluating perceptual quality</a> in <a href="https://www.sciencedirect.com/science/article/pii/S0167865526001686">Post-Processing Ensemble Framework for Balancing Fidelity and Perception in Super-Resolution</a>, Kim et al. Pattern Recognition Letters, 2026.[<a href="https://github.com/tama0728/ESR">code</a>].
