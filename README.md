@@ -38,16 +38,16 @@
     <h2 style="border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; margin-bottom: 1em;">📰 News</h2>
     <ul style="list-style-type: none; padding-left: 0;">
         <li style="margin-bottom: 0.8em;">
-            <strong><span style="color: red;">[2026-06-03] We retrained FGResQ using FGRestore100k, and the weights <code>FGResQ_v2.pth</code> have been updated in Download Weights (Google Drive / Baidu Netdisk). <a href="https://github.com/chaofengc/IQA-PyTorch">[PyIQA]</a> has also been updated accordingly. We recommend using the latest weights.</span></strong>
+            <strong><span style="color: red;">[2026-06-03] We retrained FGResQ using FGRestore100k, and the weights <code>FGResQ_v2.pth</code> have been updated in Download Weights (<a href="https://drive.google.com/drive/folders/10MVnAoEIDZ08Rek4qkStGDY0qLiWUahJ?usp=drive_link">Google Drive</a> / <a href="https://pan.baidu.com/s/1Qotikokfiv2mWcvE-6jDIA?pwd=32nq">Baidu Netdisk</a>). <a href="https://github.com/chaofengc/IQA-PyTorch">[PyIQA]</a> has also been updated accordingly. We recommend using the latest weights.</span></strong>
         </li>
         <li style="margin-bottom: 0.8em;">
-            <strong>[2026-05-19]</strong> 🎉🎉🎉 FGResQ's inference implementation is now officially supported within the outstanding <a href="https://github.com/chaofengc/IQA-PyTorch">[PyIQA]</a>! Please feel free to explore and enjoy.
+            <strong>[2026-05-19]</strong> 🎉🎉🎉 FGResQ's inference implementation is now officially supported within the outstanding <a href="https://github.com/chaofengc/IQA-PyTorch">[PyIQA]</a> (version >= 0.1.11). Many thanks to <a href="https://github.com/chaofengc">@chaofengc</a> for the support!
         </li>
         <li style="margin-bottom: 0.8em;">
-            <strong>[2026-05-14]</strong> 🔥🔥🔥Our method acts as <a href="cited_paper/prl_method.png">the key perceptual model to balance fidelity and perception</a>, and is used for <a href="cited_paper/prl_task.png">Perceptual Restoration Leaderboard</a>!
+            <strong>[2026-05-14]</strong> 🔥🔥🔥Our method acts as <a href="cited_paper/prl_method.png">the key perceptual model to balance fidelity and perception</a>, and is used for <a href="cited_paper/prl_method.png">a series of research works</a>.
         </li>
         <li style="margin-bottom: 0.8em;">
-            <strong>[2026-03-31]</strong> 🎉🎉🎉 The FGRestore dataset is now publicly available on <a href="https://huggingface.co/datasets/orpheus0429/FGRestore">HuggingFace</a>, <a href="https://drive.google.com/drive/folders/12MgwbE84TQZgUtCD8GyAqyPQs3z60FNr?usp=sharing">Google Drive</a>, and <a href="https://pan.baidu.com/s/1RDjFznYvKAiSg-DIoO4j3Q?pwd=vey5">Baidu Netdisk</a> (code: vey5).
+            <strong>[2026-03-31]</strong> 🎉🎉🎉 The FGRestore dataset is now publicly available on <a href="https://huggingface.co/datasets/orpheus0429/FGRestore">HuggingFace</a>, <a href="https://drive.google.com/drive/folders/12MgwbE84TQZgUtCD8GyAqyPQs3z60FNr?usp=sharing">Google Drive</a>, and <a href="https://pan.baidu.com/s/1RDjFznYvKAiSg-DIoO4j3Q?pwd=vey5">Baidu Netdisk</a>.
         </li>
         <li style="margin-bottom: 0.8em;">
             <strong>[2025-11-19]</strong> The model is now available on the <a href="https://huggingface.co/orpheus0429/FGResQ">HuggingFace Hub</a>. A live demo is also available on <a href="https://huggingface.co/spaces/orpheus0429/FGResQ">HuggingFace Spaces</a>.
@@ -79,8 +79,7 @@ pip install -r requirements.txt
 ### 2. Download Pre-trained Weights
 
 You can download the pre-trained model weights from the following link:
-[**Download Weights (Google Drive)**](https://drive.google.com/drive/folders/10MVnAoEIDZ08Rek4qkStGDY0qLiWUahJ?usp=drive_link), [**(Baidu Netdisk)**](https://pan.baidu.com/s/1Qotikokfiv2mWcvE-6jDIA?pwd=32nq
-) (提取码: 32nq)
+[**Download Weights (Google Drive)**](https://drive.google.com/drive/folders/10MVnAoEIDZ08Rek4qkStGDY0qLiWUahJ?usp=drive_link), [**(Baidu Netdisk)**](https://pan.baidu.com/s/1Qotikokfiv2mWcvE-6jDIA?pwd=32nq) (提取码: 32nq)
 
 Place the downloaded files in the `weights` directory.
 
