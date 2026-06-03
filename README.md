@@ -90,6 +90,7 @@ Create the `weights` directory if it doesn't exist and place the files inside.
 FGRestore/
 |-- weights/
 |   |-- FGResQ.pth
+|   |-- FGResQ_v2.pth
 |   |-- Degradation.pth
 |-- model/
 |   |-- FGResQ.py
@@ -112,13 +113,13 @@ First, import and initialize the `FGResQ`.
 from model.FGResQ import FGResQ
 
 # Path to the main model weights
-model_path = "weights/FGResQ.pth"
+model_path = "weights/FGResQ_v2.pth"
 
 # or use HuggingFace Model
 # from huggingface_hub import hf_hub_download
 # model_path = hf_hub_download(
 #     repo_id="orpheus0429/FGResQ",
-#     filename="weights/FGResQ.pth"
+#     filename="weights/FGResQ_v2.pth"
 # )
 
 # Initialize the inference engine
