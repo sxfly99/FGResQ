@@ -38,8 +38,7 @@
     <h2 style="border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; margin-bottom: 1em;">📰 News</h2>
     <ul style="list-style-type: none; padding-left: 0;">
         <li style="margin-bottom: 0.8em;">
-            <strong>[2026-06-03]</strong> 我们使用 FGRestore100k 重新训练了 FGResQ，权重已更新在[**Download Weights (Google Drive)**](https://drive.google.com/drive/folders/10MVnAoEIDZ08Rek4qkStGDY0qLiWUahJ?usp=drive_link), [**(Baidu Netdisk)**](https://pan.baidu.com/s/1Qotikokfiv2mWcvE-6jDIA?pwd=32nq
-) (提取码: 32nq)，<a href="https://github.com/chaofengc/IQA-PyTorch">[PyIQA]</a> 也已同步更新，推荐大家使用最新权重。
+            <strong>[2026-06-03]</strong> We retrained FGResQ using FGRestore100k, and the weights <code>FGResQ_v2.pth</code> have been updated in Download Weights (Google Drive / Baidu Netdisk). <a href="https://github.com/chaofengc/IQA-PyTorch">[PyIQA]</a> has also been updated accordingly. We recommend using the latest weights.
         </li>
         <li style="margin-bottom: 0.8em;">
             <strong>[2026-05-19]</strong> 🎉🎉🎉 FGResQ's inference implementation is now officially supported within the outstanding <a href="https://github.com/chaofengc/IQA-PyTorch">[PyIQA]</a>! Please feel free to explore and enjoy.
