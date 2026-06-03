@@ -95,6 +95,7 @@ pip install -r requirements.txt
 将下载的文件放入 `weights` 目录。
 
 - `FGResQ.pth`: 用于质量评分和排序的权重。
+- `FGResQ_v2.pth`: 更新版本的 FGResQ 模型权重，基于 FGRestore-100k 重新训练，用于提升图像质量评分与排序性能。
 - `Degradation.pth`: 用于退化感知任务分支的权重。
 
 如果 `weights` 目录不存在，请创建它并将权重文件放入其中。
@@ -103,6 +104,7 @@ pip install -r requirements.txt
 FGRestore/
 |-- weights/
 |   |-- FGResQ.pth
+|   |-- FGResQ_v2.pth
 |   |-- Degradation.pth
 |-- model/
 |   |-- FGResQ.py
@@ -118,13 +120,13 @@ FGRestore/
 from model.FGResQ import FGResQ
 
 # Path to the main model weights
-model_path = "weights/FGResQ.pth"
+model_path = "weights/FGResQ_v2.pth"
 
 # or use HuggingFace Model
 # from huggingface_hub import hf_hub_download
 # model_path = hf_hub_download(
 #     repo_id="orpheus0429/FGResQ",
-#     filename="weights/FGResQ.pth"
+#     filename="weights/FGResQ_v2.pth"
 # )
 
 # Initialize the inference engine
