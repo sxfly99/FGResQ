@@ -85,6 +85,7 @@ You can download the pre-trained model weights from the following link:
 Place the downloaded files in the `weights` directory.
 
 - `FGResQ.pth`: The main model for quality scoring and ranking.
+- `FGResQ_v2.pth`: The updated FGResQ model, retrained on FGRestore-100k for quality scoring and ranking.
 - `Degradation.pth`: The weights for the degradation-aware task branch.
 
 Create the `weights` directory if it doesn't exist and place the files inside.
